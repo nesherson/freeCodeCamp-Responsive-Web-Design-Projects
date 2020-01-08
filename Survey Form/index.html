@@ -4,7 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"">
+    <title>Survey Form</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1 id="title" class="survey-title">freeCodeCamp Survey form</h1>
+      <p id="description">
+        Thank you for taking time to help us improve the platform
+      </p>
+      <div class="form-section">
+        <form id="survey-form" action="">
+          <div class="label-div">
+            <label for="name">Name</label>
+          </div>
+          <div class="input-div">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placerholder="Enter your name"
+            />
+          </div>
+          <div class="label-div">
+            <label for="email">Email</label>
+          </div>
+          <div class="input-div">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placerholder="Enter your email"
+            />
+          </div>
+          <div class="label-div">
+            <label for="age">Age(optional)</label>
+          </div>
+          <div class="input-div">
+            <input type="number" name="age" id="age" />
+          </div>
+          <div class="label-div">
+            <label for="current-role"
+              >Which option best describes your current role</label
+            >
+          </div>
+          <div class="input-div">
+            <select name="current-role" id="current-role">
+              <option value="student">Student</option>
+              <option value="full-time-job">Full time job</option>
+              <option value="full-time-learner">Full time learner</option>
+              <option value="prefer-not-to-say">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>
