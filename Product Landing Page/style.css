@@ -4,17 +4,54 @@
 
 body {
 	margin: 0;
+	font-family: lato, sans-serif;
+	background-color: #eee;
 }
 
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #eee;
+	z-index: 10;
+}
+
+.logo {
+	width: 370px;
+	
+}
+.logo img {
+	width: 100%;
+	height: auto;
+}
+
+.nav-links {
+	list-style: none;
+	
+}
+.nav-links li {
+	display: inline-block;
+	margin: 0 45px;
+}
+
+.nav-links li a {
+	color: #000;
+	text-decoration: none;
+}
 
 .container {
 	width: 1000px;
-	margin: 0 auto;
+	margin: 125px auto 0 auto;
 	border: 1px solid red;
 }
 
 .container h1 {
 	text-align: center;
+	font-size: 1.6rem;
 }
 
 .form {
@@ -22,16 +59,19 @@ body {
 	margin: 0 auto;
 }
 
-.form input {
+.input-email {
 	display: block;
 	width: 100%;
+	padding: 5px 4px;
 }
 
-.form .btn-submit {
+.btn-submit {
 	display: block;
-	width: 150px;
+	width: 110px;
 	height: 30px;
 	margin: 15px auto 0 auto;
+	background-color: #f1c40f;
+	border: 0;
 }
 
 .section-features {
@@ -44,11 +84,12 @@ body {
 
 
 .feature-icon {
-	padding: 50px;
+	padding: 40px 50px;
 }
 
 .feature-icon i {
-	font-size: 3rem;
+	font-size: 3.2rem;
+	color: #ff8533;
 }
 
 .feature-desc {
@@ -78,22 +119,70 @@ body {
 	width: 100%;
 }
 
+.section-plans {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+}
+
 .plan {
 	border: 1px solid #000;
-	width: 250px;
+	width: 310px;
 	text-align: center;
 	border-radius: 3px;
 }
 
 .plan h3 {
-	background-color: #8f8f8f;
+	background-color: #ddd;
+	padding: 11px 0;
 	margin: 0;
-	padding: 10px 0;
+	text-transform: uppercase;
+	font-weight: 300;
 }
 
 .plan .plan-price {
 	font-weight: bold;
 	font-size: 1.5rem;
+	margin: 20px 0;
+}
+
+.plan button {
+	border: 0;
+	background-color: #f1c40f;
+	padding: 12px 25px;
+	margin-bottom: 10px;
+	border-radius: 2px;
+}
+
+footer {
+	margin-top: 45px;
+	background-color: #ddd;
+}
+
+.footer-info {
+	text-align: right;
+	list-style: none;
+	margin-bottom: 0;
+	padding-top: 20px;	
+}
+
+.footer-info li {
+	display: inline-block;
+	padding: 10px 25px 5px 0;
+}
+
+.footer-info li a {
+	text-decoration: none;
+	color: #000;
+}
+
+footer p {
+	text-align: right;
+	font-size: 0.9rem;
+	color: #444;
+	margin: 0;
+	padding-bottom: 15px;
+	padding-right: 15px;
 }
 
 

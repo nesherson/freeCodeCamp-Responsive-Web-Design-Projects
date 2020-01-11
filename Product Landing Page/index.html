@@ -5,17 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./style.css">
 	<title>Product Landing Page</title>
 </head>
 <body>
+	<header id="header">
+			<div class="logo">
+				<img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png">
+			</div>
+			<nav id="nav-bar">
+				<ul class="nav-links">
+					<li id="nav-link"><a href="#features">Features</a></li>
+					<li id="nav-link"><a href="#how-it-works">How It Works</a></li>
+					<li id="nav-link"><a href="#pricing">Pricing</a></li>
+				</ul>
+			</nav>
+		</header>
 	<div class="container">
 		<h1>Handcrafted, home-made masterpieces</h1>
-		<form id="form" class="form">
-			<input type="email" name="email" id="email" placeholder="Enter your email adress">
+		<form id="form" class="form" method="post" action="https://www.freecodecamp.com/email-submit">
+			<input type="email" name="email" id="email" class="input-email" placeholder="Enter your email adress">
 			<input type="submit" value="GET STARTED" id="submit" class="btn-submit">
 		</form>
-		<section class="section-features">
+		<section id="features" class="section-features">
 			<div class="feature">
 				<div class="feature-icon">
 					<i class="material-icons">star</i>
@@ -27,7 +40,7 @@
 			</div>
 			<div class="feature">
 				<div class="feature-icon">
-					<i class="material-icons">star</i>
+					<i class="material-icons">local_shipping</i>
 				</div>
 				<div class="feature-desc">
 					<h2>Fast Shipping</h2>
@@ -36,7 +49,7 @@
 			</div>
 			<div class="feature">
 				<div class="feature-icon">
-					<i class="material-icons">star</i>
+					<i class="material-icons">beenhere</i>
 				</div>
 				<div class="feature-desc">
 					<h2>Quality Ensurance</h2>
@@ -44,15 +57,15 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-presentation">
+		<section id="how-it-works" class="section-presentation">
 			<div class="container-video">
-				<video controls>
+				<video id="video" controls>
 					<source src="url(https://www.youtube.com/watch?v=9knYNjp95bs)" type="video/mp4">
 				</video>
 			</div>
 			
 		</section>
-		<section class="section-plans">
+		<section id="pricing" class="section-plans">
 			<div class="plan">
 				<h3>Tenor Trombone</h3>
 				<p class="plan-price">$600</p>
@@ -62,7 +75,33 @@
 				<p>Lorem Ipsum</p>
 				<button>SELECT</button>
 			</div>
+			<div class="plan">
+				<h3>Bass Trombone</h3>
+				<p class="plan-price">$900</p>
+				<p>Lorem Ipsum</p>
+				<p>Lorem Ipsum</p>
+				<p>Lorem Ipsum Dolor</p>
+				<p>Lorem Ipsum</p>
+				<button>SELECT</button>
+			</div>
+			<div class="plan">
+				<h3>Valve Trombone</h3>
+				<p class="plan-price">$1200</p>
+				<p>Plays similar to Trumpet</p>
+				<p>Great for Jazz Bands</p>
+				<p>Lorem Ipsum Dolor</p>
+				<p>Lorem Ipsum</p>
+				<button>SELECT</button>
+			</div>
 		</section>
+		<footer>
+			<ul class="footer-info">
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<p>Copyright 2016, Original Trombones</p>
+		</footer>
 	</div>
 
 	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
