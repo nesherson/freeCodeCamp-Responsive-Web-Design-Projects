@@ -22,20 +22,26 @@ header {
 
 .logo {
 	width: 370px;
-	
 }
+
 .logo img {
 	width: 100%;
 	height: auto;
 }
 
+nav {
+	width: 100%;
+}
+
 .nav-links {
 	list-style: none;
+	display: flex;
+	justify-content: flex-end;
 	
 }
+
 .nav-links li {
-	display: inline-block;
-	margin: 0 45px;
+	margin-right: 8%;
 }
 
 .nav-links li a {
@@ -45,8 +51,7 @@ header {
 
 .container {
 	width: 1000px;
-	margin: 125px auto 0 auto;
-	border: 1px solid red;
+	margin: 105px auto 0 auto;
 }
 
 .container h1 {
@@ -110,8 +115,8 @@ header {
 }
 
 .container-video {
-	width: 650px;
-	height: auto;
+	width: 560px;
+	height: 320px;
 	margin: 0 auto;
 }
 
@@ -184,5 +189,83 @@ footer p {
 	padding-bottom: 15px;
 	padding-right: 15px;
 }
+
+@media only screen and (max-width: 1028px) {
+	.container {
+		width: 100%;
+		margin: 105px 0 0 0;
+	}
+
+	.plan {
+		width: 33%;
+	}	
+
+}
+
+@media only screen and (max-width: 780px) {
+	.section-plans {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.plan {
+		width: 310px;	
+		margin-top: 20px;
+	}
+	
+}
+
+@media only screen and (max-width: 640px) {
+
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.nav-links {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.nav-links li {
+		margin-bottom: 8px;
+	}
+
+	.container {
+		margin-top: 200px;
+	}
+
+	.container-video {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	}
+}
+
+@media only screen and (max-width: 551px) {
+	
+	.section-features {
+	margin-top: 40px;
+}
+
+.feature {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.feature-icon {
+	padding: 30px 0;
+	margin-top: 20px;
+}
+
+.feature-desc h2,
+.feature-desc p {
+	text-align: center;
+}
+
+}
+
 
 
