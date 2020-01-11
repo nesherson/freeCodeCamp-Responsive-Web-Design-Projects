@@ -1,0 +1,99 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	border: 1px solid red;
+}
+
+.container h1 {
+	text-align: center;
+}
+
+.form {
+	width: 250px;
+	margin: 0 auto;
+}
+
+.form input {
+	display: block;
+	width: 100%;
+}
+
+.form .btn-submit {
+	display: block;
+	width: 150px;
+	height: 30px;
+	margin: 15px auto 0 auto;
+}
+
+.section-features {
+	margin-top: 40px;
+}
+
+.feature {
+	display: flex;
+}
+
+
+.feature-icon {
+	padding: 50px;
+}
+
+.feature-icon i {
+	font-size: 3rem;
+}
+
+.feature-desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.feature-desc h2,
+.feature-desc p {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+.section-presentation {
+	margin-top: 35px;
+}
+
+.container-video {
+	width: 650px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.container-video video {
+	width: 100%;
+}
+
+.plan {
+	border: 1px solid #000;
+	width: 250px;
+	text-align: center;
+	border-radius: 3px;
+}
+
+.plan h3 {
+	background-color: #8f8f8f;
+	margin: 0;
+	padding: 10px 0;
+}
+
+.plan .plan-price {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+
