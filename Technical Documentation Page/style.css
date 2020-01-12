@@ -3,7 +3,7 @@
 body {
 	margin: 0;
 	font-family: "Open Sans", Arial;
-	font-size: 14	px;
+	font-size: 14px;
 }
 
 .navbar {
@@ -13,10 +13,9 @@ body {
 	position: fixed;
 	bottom: 0;
 	left: 0;
-
 }
 
-.navbar header h1 {
+.navbar header {
 	text-align: center;
 	font-size: 1.8rem;
 	font-weight: 300;
@@ -44,19 +43,6 @@ body {
 	padding: 12px 30px;
 }
 
-@media (max-width: 820px) {
-	.navbar {
-		position: static;
-		width: 100%;
-		height: 270px;
-		border: 0;
-	}
-
-	.nav-links {
-		border: 2px solid grey;
-	}
-}
-
 main {
 	padding: 15px 30px;
 	margin-left: 309px;
@@ -69,15 +55,59 @@ article {
 .section-heading {
 	font-size: 1.8rem;
 	font-weight: 300;
-	margin: 20px;
+}
+
+.main-section article {
+	color: #4d4e53;
 }
 
 .main-section article p {
-	font-size: 0.95rem;
+	font-size: 0.90rem;
 	line-height: 1.40rem;
 }
 
 .main-section article ul {
 	padding-left: 65px;
 	line-height: 1.40rem;
+}
+
+.main-section article ul li {
+	margin: 14px 0;
+}
+
+code {
+	display: block;
+	/*text-align: left;
+	white-space: normal;
+	position: relative;
+	word-break: normal;
+	word-wrap: normal;*/
+	line-height: 2;
+	background-color: #f7f7f7;
+	padding: 15px;
+	margin: 10px;
+	border-radius: 5px;
+	font-size: 0.8rem;
+}
+
+@media (max-width: 820px) {
+
+	main {
+		margin-left: 0;
+	}
+
+	.main-section {
+	margin-top: 30px;
+}
+
+	.navbar {
+		position: static;
+		width: 100%;
+		height: 270px;
+		border: 0;
+	}
+
+	.nav-links {
+		border: 2px solid grey;
+	}
 }
