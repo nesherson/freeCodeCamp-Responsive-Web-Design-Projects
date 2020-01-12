@@ -4,18 +4,19 @@
 	<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="./style.css">
 	<title>Personal Portfolio Webpage</title>
 </head>
 <body>
-	<!--<nav id="navbar" class="navbar">
+	<nav id="navbar" class="navbar">
 		<ul>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Work</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="#welcome-section">About</a></li>
+			<li><a href="#projects">Work</a></li>
+			<li><a href="#contact">Contact</a></li>
 		</ul>
-	</nav>-->
-	<section class="section-welcome">
+	</nav>
+	<section id="welcome-section" class="section-welcome">
 		<h1>Hey I am Mimic</h1>
 		<p>a web developer</p>
 	</section>
@@ -59,7 +60,52 @@
 				</a>
 			</div>	
 		</div>
-		<a href="https://codepen.io/FreeCodeCamp/"></a>
+		<a id="profile-link" class="btn-show-all" href="https://codepen.io/FreeCodeCamp/" target="_blank">Show All</a>
 	</section>
+	<section id="contact" class="section-social">
+		<header>Let's work together...</header>
+		<p>How do you take your coffee?</p>	
+		<div class="links-social">
+			<div class="link-social">
+				<a href="#">
+				<i class="material-icons">chat_bubble</i>
+				Facebook
+				</a>
+			</div>
+			<div class="link-social">
+				<a href="#">
+				<i class="material-icons">chat_bubble</i>
+				Github
+				</a>
+			</div>
+			<div class="link-social">
+				<a href="#">
+				<i class="material-icons">chat_bubble</i>
+				Twitter
+				</a>
+			</div>
+			<div class="link-social">
+				<a href="#">
+				<i class="material-icons">chat_bubble</i>
+				Send a email
+				</a>
+			</div>
+			<div class="link-social">
+				<a href="#">
+				<i class="material-icons">chat_bubble</i>
+				Call me
+				</a>
+			</div>
+		</div>	
+	</section>
+	<footer>
+		<p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+		<p>&copy;Created for freeCodeCamp
+			<a href="#">
+				<i class="material-icons">chat_bubble</i>
+			</a>
+		</p>
+	</footer>
+	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
